@@ -16,3 +16,11 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const mq = px => `max-width: ${px / 16}rem`;
+
+export const BREAKPOINTS = {
+  phone: mq(600),
+  tablet: mq(950),
+  laptop: mq(1300),
+};
