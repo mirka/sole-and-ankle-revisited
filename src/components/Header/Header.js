@@ -62,10 +62,10 @@ const SuperHeaderWrapper = styled.div`
 `;
 
 const MainHeader = styled.div`
+  overflow-x: auto;
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 
   @media (${BREAKPOINTS.laptop}) {
@@ -78,7 +78,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(24px, 3.5vw - 20px, 48px);
   margin: 0px 48px;
 
   @media (${BREAKPOINTS.laptop}) {
